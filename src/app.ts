@@ -43,7 +43,7 @@ app.use(passport.initialize());
 app.get('/', (req, res) => {
   res.json({
     success: true,
-    message: 'Welcome to the PowerBank API! Server is up and running.',
+    message: 'Welcome to the GridWatch API! Server is up and running.',
     docs: 'Refer to Postman collection for API documentation',
   });
 });
@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
 app.get('/api/v1', (req, res) => {
   res.json({
     success: true,
-    message: 'PowerBank API v1 is active.',
+    message: 'GridWatch API v1 is active.',
     endpoints: [
       '/api/v1/auth',
       '/api/v1/users',

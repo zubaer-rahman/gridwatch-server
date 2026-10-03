@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const data = JSON.parse(fs.readFileSync('powerbank_collection.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('gridwatch_collection.json', 'utf8'));
 
 const phase3Folders = [
   {
@@ -90,5 +90,5 @@ const phase3Folders = [
 ];
 
 data.item.push(...phase3Folders);
-fs.writeFileSync('powerbank_collection.json', JSON.stringify(data, null, 2));
+fs.writeFileSync('gridwatch_collection.json', JSON.stringify(data, null, 2));
 console.log('Collection updated successfully');

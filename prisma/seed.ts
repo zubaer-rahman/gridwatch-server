@@ -97,7 +97,7 @@ async function main() {
   
   const admin = await prisma.user.create({
     data: {
-      email: 'admin@powerbank.com',
+      email: 'admin@gridwatch.com',
       name: 'System Admin',
       password: passwordHash,
       role: Role.ADMIN,
@@ -110,7 +110,7 @@ async function main() {
 
   const op1 = await prisma.user.create({
     data: {
-      email: 'operator1@powerbank.com',
+      email: 'operator1@gridwatch.com',
       name: 'Grid Operator Alpha',
       password: passwordHash,
       role: Role.OPERATOR,
@@ -123,7 +123,7 @@ async function main() {
 
   const op2 = await prisma.user.create({
     data: {
-      email: 'operator2@powerbank.com',
+      email: 'operator2@gridwatch.com',
       name: 'Grid Operator Beta',
       password: passwordHash,
       role: Role.OPERATOR,
@@ -142,7 +142,7 @@ async function main() {
 
     const user = await prisma.user.create({
       data: {
-        email: `customer${i}@powerbank.com`,
+        email: `customer${i}@gridwatch.com`,
         name: `Customer ${i}`,
         password: passwordHash,
         role: Role.CUSTOMER,

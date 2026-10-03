@@ -1,7 +1,7 @@
 {
   "info": {
-    "name": "PowerBank API",
-    "description": "API collection for the PowerBank load shedding management system.",
+    "name": "GridWatch API",
+    "description": "API collection for the GridWatch load shedding management system.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -37,7 +37,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\": \"admin2@powerbank.com\",\n  \"password\": \"password123\",\n  \"name\": \"New Admin\",\n  \"phoneNumber\": \"+8801700000000\",\n  \"meterNumber\": \"MTR-TEST-123\"\n}"
+              "raw": "{\n  \"email\": \"admin2@gridwatch.com\",\n  \"password\": \"password123\",\n  \"name\": \"New Admin\",\n  \"phoneNumber\": \"+8801700000000\",\n  \"meterNumber\": \"MTR-TEST-123\"\n}"
             },
             "url": {
               "raw": "{{baseUrl}}/auth/register",
@@ -78,7 +78,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\": \"admin@powerbank.com\",\n  \"password\": \"password123\"\n}"
+              "raw": "{\n  \"email\": \"admin@gridwatch.com\",\n  \"password\": \"password123\"\n}"
             },
             "url": {
               "raw": "{{baseUrl}}/auth/login",
@@ -172,7 +172,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\": \"customer1@powerbank.com\"\n}"
+              "raw": "{\n  \"email\": \"customer1@gridwatch.com\"\n}"
             },
             "url": {
               "raw": "{{baseUrl}}/auth/forgot-password",
@@ -198,7 +198,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\": \"customer1@powerbank.com\",\n  \"otp\": \"123456\",\n  \"newPassword\": \"newpassword123\"\n}"
+              "raw": "{\n  \"email\": \"customer1@gridwatch.com\",\n  \"otp\": \"123456\",\n  \"newPassword\": \"newpassword123\"\n}"
             },
             "url": {
               "raw": "{{baseUrl}}/auth/reset-password",

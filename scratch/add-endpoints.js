@@ -1,5 +1,5 @@
 const fs = require('fs');
-const collection = JSON.parse(fs.readFileSync('powerbank_collection.json', 'utf8'));
+const collection = JSON.parse(fs.readFileSync('gridwatch_collection.json', 'utf8'));
 
 const endpointsToAdd = [
   { folder: '1. Auth', name: 'Google OAuth Login', method: 'GET', url: 'auth/google', auth: false },
@@ -46,5 +46,5 @@ for (const ep of endpointsToAdd) {
   }
 }
 
-fs.writeFileSync('powerbank_collection.json', JSON.stringify(collection, null, 2));
+fs.writeFileSync('gridwatch_collection.json', JSON.stringify(collection, null, 2));
 console.log('Added missing endpoints!');

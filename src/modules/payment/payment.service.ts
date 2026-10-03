@@ -44,7 +44,7 @@ export class PaymentService {
           price_data: {
             currency: 'bdt',
             product_data: {
-              name: `PowerBank Bill - ${bill.month}`,
+              name: `GridWatch Bill - ${bill.month}`,
               description: `Load shedding management bill for ${bill.month}`,
             },
             unit_amount: Math.round(bill.totalAmount * 100), // Stripe expects amounts in cents/paisa

@@ -45,7 +45,7 @@ function parseRoutes(dir) {
 
 parseRoutes(path.join(__dirname, 'src/modules'));
 
-const collection = JSON.parse(fs.readFileSync('powerbank_collection.json', 'utf8'));
+const collection = JSON.parse(fs.readFileSync('gridwatch_collection.json', 'utf8'));
 const postmanEndpoints = [];
 
 function extractPostmanEndpoints(items) {

@@ -6,7 +6,7 @@ export class NotificationService {
   private static TWILIO_ACCOUNT_SID = env.TWILIO_ACCOUNT_SID;
   private static TWILIO_AUTH_TOKEN = env.TWILIO_AUTH_TOKEN;
   private static TWILIO_PHONE_NUMBER = env.TWILIO_PHONE_NUMBER;
-  private static RESEND_FROM_EMAIL = env.RESEND_FROM_EMAIL || 'noreply@powerbank.app';
+  private static RESEND_FROM_EMAIL = env.RESEND_FROM_EMAIL || 'noreply@gridwatch.app';
 
   static async sendEmail(to: string, subject: string, html: string) {
     if (!this.RESEND_API_KEY) {
@@ -103,7 +103,7 @@ export class NotificationService {
 
       const phone = (user as any).phoneNumber;
       if (phone) {
-        this.sendSMS(phone, `PowerBank Alert: ${message}`).catch(console.error);
+        this.sendSMS(phone, `GridWatch Alert: ${message}`).catch(console.error);
       }
     }
   }

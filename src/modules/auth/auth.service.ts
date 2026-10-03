@@ -144,7 +144,7 @@ export class AuthService {
     // Send OTP via email using Resend integration
     await NotificationService.sendEmail(
       email,
-      'PowerBank - Password Reset OTP',
+      'GridWatch - Password Reset OTP',
       `<p>Your OTP for password reset is: <strong>${otp}</strong></p><p>This OTP will expire in 5 minutes.</p>`
     ).catch(console.error);
 

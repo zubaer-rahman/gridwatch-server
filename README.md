@@ -1,10 +1,10 @@
-# PowerBank ⚡
+# GridWatch ⚡
 
 **"Digitize and Automate Load Shedding & Power Outage Management"**
 
 🚀 **Live Demo:** [https://power-bank-server.vercel.app](https://power-bank-server.vercel.app) *(Example Deployment)*
 
-PowerBank is a comprehensive backend API for electricity distribution utilities. It bridges the gap between grid operators managing the infrastructure and everyday consumers. Operators can schedule load shedding, manage grid hierarchies, and respond to incidents. Customers can report outages, track schedules, and pay their electricity bills. Admins oversee the entire platform, setting quotas and monitoring grid fairness.
+GridWatch is a comprehensive backend API for electricity distribution utilities. It bridges the gap between grid operators managing the infrastructure and everyday consumers. Operators can schedule load shedding, manage grid hierarchies, and respond to incidents. Customers can report outages, track schedules, and pay their electricity bills. Admins oversee the entire platform, setting quotas and monitoring grid fairness.
 
 ## Features
 
@@ -75,7 +75,7 @@ The backend server relies on a robust ecosystem of Node.js libraries, TypeScript
 
 ## 📚 API Documentation
 
-Below is the complete list of available endpoints. For full documentation including headers and request bodies, please import the included **Postman Collection** (`powerbank_collection.json`).
+Below is the complete list of available endpoints. For full documentation including headers and request bodies, please import the included **Postman Collection** (`gridwatch_collection.json`).
 
 ### 1. Auth
 | Method | Endpoint | Description |
@@ -196,8 +196,8 @@ Below is the complete list of available endpoints. For full documentation includ
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/PowerBank.git
-   cd PowerBank/powerbank-server
+   git clone https://github.com/yourusername/GridWatch.git
+   cd GridWatch/gridwatch-server
    ```
 
 2. **Install dependencies**
@@ -250,7 +250,7 @@ Below is the complete list of available endpoints. For full documentation includ
    ```
 
 6. **Testing with Postman**
-   A complete Postman collection is included: `powerbank_collection.json`. Import this file into Postman to easily test all available endpoints.
+   A complete Postman collection is included: `gridwatch_collection.json`. Import this file into Postman to easily test all available endpoints.
 
 ## 🌍 Deployment
 

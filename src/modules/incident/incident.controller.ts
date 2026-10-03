@@ -9,7 +9,7 @@ export class IncidentController {
       const data = { ...req.body };
 
       if (req.file) {
-        data.photoUrl = await uploadToCloudinary(req.file.buffer, 'powerbank/incidents');
+        data.photoUrl = await uploadToCloudinary(req.file.buffer, 'gridwatch/incidents');
       }
 
       const incident = await IncidentService.create(data, req.user!.id);

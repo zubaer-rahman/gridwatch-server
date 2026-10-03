@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const collectionPath = path.join(__dirname, '..', 'powerbank_collection.json');
+const collectionPath = path.join(__dirname, '..', 'gridwatch_collection.json');
 const data = JSON.parse(fs.readFileSync(collectionPath, 'utf8'));
 
 // Check if Phase 5 folders already exist

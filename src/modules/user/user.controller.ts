@@ -18,7 +18,7 @@ export class UserController {
       const updateData = { ...req.body };
 
       if (req.file) {
-        updateData.avatar = await uploadToCloudinary(req.file.buffer, 'powerbank/avatars');
+        updateData.avatar = await uploadToCloudinary(req.file.buffer, 'gridwatch/avatars');
       }
 
       const user = await UserService.updateProfile(req.user!.id, updateData);
